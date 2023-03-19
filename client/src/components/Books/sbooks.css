@@ -1,0 +1,49 @@
+.navbar_router {
+  width: 100%;
+  font-family: 'Blinker';
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Blinker', sans-serif;
+}
+
+strong {
+  font-family: 'Blinker', sans-serif;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.info {
+  margin: 0 0 0 50px;
+}
+
+.genres {
+  display: flex;
+  align-items: center;
+}
+
+.button2 {
+  margin-top:10px;
+  display: flex;
+  width:70px;
+  height: 28px;
+  border-radius: 5px;
+  background-color: #d63638;;
+  color: white;
+  border: none;
+  align-items: center;
+  justify-content: space-around;
+  transition-duration: 0.5s;
+}
+
+button2:hover {
+  opacity: 0.6;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+h3 {
+  margin: 10px;
+}
