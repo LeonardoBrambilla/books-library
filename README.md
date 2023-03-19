@@ -9,7 +9,7 @@
 
 # How to run this projects
 ```sh
-git clone https://github.com/LeonardoBrambilla/podcast-portal.git
+git clone https://github.com/LeonardoBrambilla/books-library.git
 npm install in 2 folder
 ./client npm run server
 ./server npm start
