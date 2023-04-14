@@ -11,7 +11,7 @@ const PostAuthor = () => {
   const onSubmit = async (e) => {
     
     e.preventDefault()
-    await axios.post("http://localhost:5000/create/author",{firstName:firstName,secondName:secondName,dateBirth:dateBirth,dateDeath:dateDeath})
+    await axios.post("https://books-library-server-chi.vercel.app/create/author",{firstName:firstName,secondName:secondName,dateBirth:dateBirth,dateDeath:dateDeath})
   }
 
   return (

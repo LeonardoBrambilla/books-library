@@ -11,7 +11,7 @@ const Sbooks = () => {
   useEffect(() => {
     const get = async () => {
       try {  
-        const {data} = await axios.get(`http://localhost:5000/catalog/books/${book}`)
+        const {data} = await axios.get(`https://books-library-server-chi.vercel.app/catalog/books/${book}`)
         setBooks(data)
         setGenres(data.genres)
       } catch (error) {

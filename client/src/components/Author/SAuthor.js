@@ -9,7 +9,7 @@ const SAuthor = () => {
   const navigate = useNavigate()
   useEffect(() => {
     const get = async () => {      
-        const {data} = await axios.get(`http://localhost:5000/authors/${firstName}`)
+        const {data} = await axios.get(`https://books-library-server-chi.vercel.app/authors/${firstName}`)
         setAuthor(data.data[0].secondName)
         setBooks(data.books)       
     }

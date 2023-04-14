@@ -12,7 +12,7 @@ const PostBook = () => {
   const onSubmit = async (e) => {
     e.preventDefault()
     const newGenres = genres.split(" ")
-    await axios.post  ("http://localhost:5000/create/books",{firstName:firstName,name:name,summary:summary,isbn:isbn,genres:newGenres})
+    await axios.post  ("https://books-library-server-chi.vercel.app/create/books",{firstName:firstName,name:name,summary:summary,isbn:isbn,genres:newGenres})
   }
 
   return (

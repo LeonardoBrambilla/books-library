@@ -12,7 +12,7 @@ const UpdateAuthor = () => {
   const {firstName} = useParams()
   const onSubmit = async (e) => {
     e.preventDefault()
-    await axios.put(`http://localhost:5000/update/author/${firstName}`,{
+    await axios.put(`https://books-library-server-chi.vercel.app/update/author/${firstName}`,{
       firstName:newFirstName,secondName:secondName,dateBirth:dateBirth,dateDeath:dateDeath
     })
   }

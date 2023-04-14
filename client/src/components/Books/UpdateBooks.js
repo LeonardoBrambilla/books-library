@@ -15,7 +15,7 @@ const UpdateBook = () => {
   const onSubmit = async (e) => {
     e.preventDefault()
     const newGenres = genres.split(" ")
-    await axios.put(`http://localhost:5000/update/books/${name}`,{firstName:firstName,name:newName,summary:summary,isbn:isbn,genres:newGenres})
+    await axios.put(`https://books-library-server-chi.vercel.app/update/books/${name}`,{firstName:firstName,name:newName,summary:summary,isbn:isbn,genres:newGenres})
   }
 
   return (

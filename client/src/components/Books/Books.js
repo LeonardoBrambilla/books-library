@@ -8,7 +8,7 @@ const Books = () => {
 
   useEffect(() => {
     const get = async () => {
-      const {data} = await axios.get("http://localhost:5000/catalog/books")
+      const {data} = await axios.get("https://books-library-server-chi.vercel.app/catalog/books")
       setBooks(data.books)
     }
     get()

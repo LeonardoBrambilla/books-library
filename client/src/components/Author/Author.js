@@ -7,7 +7,7 @@ const Author = () => {
   useEffect(() => { 
     const get = async () => {
       try {        
-        const {data} = await axios.get("http://localhost:5000/authors")
+        const {data} = await axios.get("https://books-library-server-chi.vercel.app/authors")
         setArray(data.authors.firstName.map(e=>({firstName:e,secondName:data.authors.secondName[data.authors.firstName.indexOf(e)]})))
       } catch (error) {
        console.log(error) 

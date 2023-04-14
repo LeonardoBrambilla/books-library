@@ -8,7 +8,7 @@ const Home = () => {
   useEffect(() => {
     const get = async () => {
       try {
-        const {data} = await axios.get("http://localhost:5000/")
+        const {data} = await axios.get("https://books-library-server-chi.vercel.app")
         setDate(data.data)
       } catch (error) {
         console.log(error)
