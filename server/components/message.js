@@ -83,7 +83,7 @@ exports.createAuthor = async(req,res) => {
     secondName,
     dateBirth,
     dateDeath
-  } = req.body.data
+  } = req.body
 
   const authors = new Author({
     firstName,

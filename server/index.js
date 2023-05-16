@@ -10,6 +10,15 @@ app.use('/',require("./routes/routes"))
 
 const port = process.env.PORT || 5000
 
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "http://localhost:5000");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept"
+  );
+  next();
+});
+
 const start = async()=>{ 
   try{
     await connectDB(process.env.MONGO_URL)
