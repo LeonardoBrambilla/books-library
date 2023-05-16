@@ -8,7 +8,7 @@ const Genres = () => {
   useEffect(() => {
     const get = async () => {
       try {        
-        const {data} = await axios.get("hhttps://books-library-server-chi.vercel.app/catalog/genres/")
+        const {data} = await axios.get("https://books-library-server-chi.vercel.app/catalog/genres/")
         setGenres(data.genres)
       } catch (error) {
        console.log(error)  
